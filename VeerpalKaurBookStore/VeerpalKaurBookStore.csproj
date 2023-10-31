@@ -20,6 +20,7 @@
   <ItemGroup>
     <ProjectReference Include="..\VeerpalBooks.DataAccess\VeerpalBooks.DataAccess.csproj" />
     <ProjectReference Include="..\VeerpalBooks.Models\VeerpalBooks.Models.csproj" />
+    <ProjectReference Include="..\VeerpalBooks.Utility\VeerpalBooks.Utility.csproj" />
   </ItemGroup>
 
   <ItemGroup>
