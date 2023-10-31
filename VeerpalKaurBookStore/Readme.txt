@@ -50,7 +50,7 @@ and agter that i remove it
  then i added the new area under the Area folder name Customer and chaned the path in the startup.cs file as given.
  then i modify my statup.cs...,.then i move the homecontroller.cs to area > customer> controller
  and delete my data and models folder
- then i edit my homecontrooler.cs file...
+ then i edit my homecontroller.cs file...
  after that i moved my home folder under views  ....test my app
  wow... its working 
  in the next step i add new area admin in areas folder ...then move my view files to admin folder..
