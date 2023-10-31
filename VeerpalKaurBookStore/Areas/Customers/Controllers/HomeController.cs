@@ -8,7 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using VeerpalKaurBookStore.Models.ViewModels;
 
-namespace VeerpalKaurBookStore.Controllers
+namespace VeerpalKaurBookStore.Area.Customer.Controllers
 {
     [Area("Customer")]
     public class HomeController : Controller
