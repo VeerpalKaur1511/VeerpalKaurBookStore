@@ -10,7 +10,7 @@ using VeerpalKaurBookStore.Models.ViewModels;
 
 namespace VeerpalKaurBookStore.Area.Customer.Controllers
 {
-    [Area("Customer")]
+    [Area("Customers")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

@@ -55,3 +55,6 @@ and agter that i remove it
  wow... its working 
  in the next step i add new area admin in areas folder ...then move my view files to admin folder..
  then delete data , model, and controller folder and i done my assignment.....
+
+ I got so many errors and found that my parth was not set...
+ Then changed the path    and it worked.

@@ -64,7 +64,7 @@ namespace VeerpalKaurBookStore
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{area=customers}/{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }
