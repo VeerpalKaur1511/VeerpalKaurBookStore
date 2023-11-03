@@ -58,3 +58,7 @@ and agter that i remove it
 
  I got so many errors and found that my parth was not set...
  Then changed the path    and it worked.
+
+ 03/11/2023  1.38pm
+ now i'm starting my 2part of my assignment regarding bookstore
+ first i modify database
