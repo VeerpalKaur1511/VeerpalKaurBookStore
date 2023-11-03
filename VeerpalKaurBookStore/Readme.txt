@@ -62,3 +62,5 @@ and agter that i remove it
  03/11/2023  1.38pm
  now i'm starting my 2part of my assignment regarding bookstore
  first i modify database
+ then i run nuget console package and run add-migration AddDefaultIdentityMigration
+ but it showing error then i change default project to .dataAccess thenrun again ...its working
