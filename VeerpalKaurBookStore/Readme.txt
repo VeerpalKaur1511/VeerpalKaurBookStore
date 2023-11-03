@@ -64,3 +64,4 @@ and agter that i remove it
  first i modify database
  then i run nuget console package and run add-migration AddDefaultIdentityMigration
  but it showing error then i change default project to .dataAccess thenrun again ...its working
+i added new DB and create new file named category in models project...then add migrationin pm console
