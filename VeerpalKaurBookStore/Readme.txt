@@ -77,9 +77,17 @@ i added new DB and create new file named category in models project...then add m
 its empty then update my using statment and ass some code
 then i run pmconsole then run migration ...but not build..
 
-06/11/2023
+06/11/2023 11.00am
+
 its showing too much erreor in ApplicationDbContext.cs ....
 then i slove it by many efforts.
 i delete my migration file and again run the compand for mifration 
 and do all changes and test its
 ....its working....
+
+
+11.45Am
+2.2 repositry
+first i added Repository folder in data.Access and some code to this file
+then add new folder IRepository in the repository folder
+then add new class IRepository.cs 
