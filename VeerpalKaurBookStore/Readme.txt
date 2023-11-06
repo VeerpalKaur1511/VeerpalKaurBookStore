@@ -110,3 +110,10 @@ and modify my all code and slove all errors
 then i add new interface IUnitOfWork and modify my code
 then i add new class unitOfWork and modify my code....
 there is alot of errors....now im sloving it ...its good
+
+2.2 Category CRUD
+5.09Pm
+now i added new categorycontroller.cs in my controllers folder
+then i modify my my file code.....
+then i add Category folder to my views .../
+then i add new new index.cshtml and modify my code
