@@ -12,7 +12,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
- 
+using VeerpalBooks.DataAccess.Repository;
+using VeerpalBooks.DataAccess.Repository.IRepository;
 
 namespace VeerpalKaurBookStore
 {

@@ -108,4 +108,5 @@ then i add new interface in repositry.cs named ISP_Call.csnad modify my code
 then i add class (SP_Call.cs) and add using statments and connection string to the datbase
 and modify my all code and slove all errors
 then i add new interface IUnitOfWork and modify my code
-then i add new class unitOfWork and modify my code
+then i add new class unitOfWork and modify my code....
+there is alot of errors....now im sloving it ...its good
