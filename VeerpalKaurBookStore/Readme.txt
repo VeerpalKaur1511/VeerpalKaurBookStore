@@ -91,3 +91,10 @@ and do all changes and test its
 first i added Repository folder in data.Access and some code to this file
 then add new folder IRepository in the repository folder
 then add new class IRepository.cs 
+then Modify so it can be used on the Category class to do all the CRUD operations 
+Methods to use for CRUD:
+Get item from the DB
+List of Categories
+Add objects
+Remove objects
+
