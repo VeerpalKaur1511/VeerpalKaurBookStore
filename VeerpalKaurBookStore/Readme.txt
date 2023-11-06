@@ -71,7 +71,7 @@ and agter that i remove it
 
  1.2 create the db
 
- then i run nuget console package and run add-migration AddDefaultIdentityMigration (20231103182157_AddDefaultIdentityMigration.cs
+ then i run nuget console package and run add-migration AddDefaultIdentityMigration which makes this file(20231103182157_AddDefaultIdentityMigration.cs)
  but it showing error then i change default project to .dataAccess thenrun again ...its working
 i added new DB and create new file named category in models project...then add migrationin pm console
 its empty then update my using statment and ass some code
@@ -97,7 +97,7 @@ Get item from the DB
 List of Categories
 Add objects
 Remove objects
-
-
-12.31pm
 i updated my repositry.cs file
+
+1.00pm
+i added new class Category.cs and IcategoryRepository.cs
