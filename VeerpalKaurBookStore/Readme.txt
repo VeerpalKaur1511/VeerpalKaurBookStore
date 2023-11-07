@@ -127,3 +127,5 @@ its working....and showing vey nice...
 then i apply the code to activate edit , delete and create buttons
 then i add new Upsert.cshtml file
 then cody code from blackbord ....then 
+then i added two file _CreateAndBackToListButton.cshtml and _EditAndBackToListButton 
+then i updated all code
