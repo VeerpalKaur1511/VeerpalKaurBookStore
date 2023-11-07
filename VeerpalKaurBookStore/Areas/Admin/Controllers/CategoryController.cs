@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using VeerpalBooks.DataAccess.Repository.IRepository;
+using VeerpalBooks.Models;
 
 namespace VeerpalKaurBookStore.Areas.Admin.Controllers
 {
@@ -18,6 +19,22 @@ namespace VeerpalKaurBookStore.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
+            return View();
+        }
+
+        public IActionResult Upsert(int? id) // action method for uppsert
+        {
+            Category category = new Category();
+            if (id == null)
+            {
+                return View(category);
+
+            }
+            category = _unitOfWork.Category.Get(id.GetValueOrDefault());
+            if (category == null)
+            {
+                return NotFound();
+            }
             return View();
         }
 
