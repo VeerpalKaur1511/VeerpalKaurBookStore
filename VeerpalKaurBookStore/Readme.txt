@@ -129,3 +129,9 @@ then i add new Upsert.cshtml file
 then cody code from blackbord ....then 
 then i added two file _CreateAndBackToListButton.cshtml and _EditAndBackToListButton 
 then i updated all code
+then i add some code in index.cshtml..
+then i modify my CategoeryController.cs...add more....code...
+also i added more code in categoery.js
+and i also delete one line of savechanges from RepositoryCategory..
+
+then i run it...
