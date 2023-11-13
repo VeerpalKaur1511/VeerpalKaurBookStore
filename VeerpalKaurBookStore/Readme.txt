@@ -70,7 +70,7 @@ and agter that i remove it
  first i modify database
 
  1.2 create the db
-
+ 04/11/2023  2.30pm
  then i run nuget console package and run add-migration AddDefaultIdentityMigration which makes this file(20231103182157_AddDefaultIdentityMigration.cs)
  but it showing error then i change default project to .dataAccess thenrun again ...its working
 i added new DB and create new file named category in models project...then add migrationin pm console
@@ -134,4 +134,10 @@ then i modify my CategoeryController.cs...add more....code...
 also i added more code in categoery.js
 and i also delete one line of savechanges from RepositoryCategory..
 
-then i run it...
+then i run it...its showing an error
+
+13/11/2023
+when i run the application its showing this error .."DataTables warning: table id=tblData - Ajax error. For more information about this error, please see http://datatables.net/tn/7"..
+and when i click on category its showing An unhandled exception occurred while processing the request.
+InvalidOperationException: The partial view '_ValidationScriptPartial' was not found. The following locations were searched:
+/Areas/Admin/Views/Category/_ValidationScriptPartial.cshtml
