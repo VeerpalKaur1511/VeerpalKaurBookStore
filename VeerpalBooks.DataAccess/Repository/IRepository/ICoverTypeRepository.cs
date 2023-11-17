@@ -9,6 +9,6 @@ namespace VeerpalBooks.DataAccess.Repository.IRepository
 {
     public interface ICoverTypeRepository : IRepository<CoverType>
     {
-        void Update(Category category);
+        void Update(CoverType covertype);
     }
 }

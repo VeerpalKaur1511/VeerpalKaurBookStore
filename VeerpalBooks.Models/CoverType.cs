@@ -11,7 +11,7 @@ namespace VeerpalBooks.Models
     {
         [Key]
         public int id { get; set; }
-        public int Id { get; set; }
+       
         [Display(Name = "CoverType Name")]
         [Required]
         [MaxLength(50)]
