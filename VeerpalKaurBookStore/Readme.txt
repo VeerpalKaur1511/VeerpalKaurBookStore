@@ -147,3 +147,5 @@ InvalidOperationException: The partial view '_ValidationScriptPartial' was not f
 i started my 3 part of my 2 assignment first i make i  class Covertype.cs under models folder
 then make new class and interface under repositry folder ...after that i new code to applicationDbContext.cs named CoverType
 then i run a migration command (20231117214837_AddCoverTypeToDB.cs)...
+
+then i modify my code in covertyperepositry and icovertyperepositry 
