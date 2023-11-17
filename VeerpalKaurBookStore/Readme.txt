@@ -141,3 +141,9 @@ when i run the application its showing this error .."DataTables warning: table i
 and when i click on category its showing An unhandled exception occurred while processing the request.
 InvalidOperationException: The partial view '_ValidationScriptPartial' was not found. The following locations were searched:
 /Areas/Admin/Views/Category/_ValidationScriptPartial.cshtml
+
+
+17/11/2023   3.00pm
+i started my 3 part of my 2 assignment first i make i  class Covertype.cs under models folder
+then make new class and interface under repositry folder ...after that i new code to applicationDbContext.cs named CoverType
+then i run a migration command (20231117214837_AddCoverTypeToDB.cs)...
