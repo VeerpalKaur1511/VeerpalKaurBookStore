@@ -1,6 +1,4 @@
-﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+﻿@{ Layout = "/Views/Shared/_Layout.cshtml"; }
 
 <br />
 <div class="row">
@@ -28,7 +26,7 @@
     </table>
 </div>
 <div class="text-center">
-    <a href="/Admin/Product/Upsert/${data}" class="btn btn-success text-white" style="cursor:pointer">
+    <a href="/Admin/Category/Upsert/${data}" class="btn btn-success text-white" style="cursor:pointer">
         <i class="fas fa-edit"></i>&nbsp;
     </a>
     <a onclick=Delete("/Admin/Product/Delete/${data}") class="btn btn-danger text-white" style="cursor:pointer">
@@ -36,6 +34,8 @@
     </a>
 </div>
 
+
+
 @section Scripts{
-    <script src="~/js/Product.js"></script>
+    <script src="~/js/product.js"></script>
 }

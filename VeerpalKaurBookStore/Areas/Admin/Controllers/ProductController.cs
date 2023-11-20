@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using VeerpalBooks.DataAccess.Repository.IRepository;
 using VeerpalBooks.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using VeerpalBooks.Models.ViewModels;
 
 namespace VeerpalKaurBookStore.Areas.Admin.Controllers
@@ -16,7 +16,7 @@ namespace VeerpalKaurBookStore.Areas.Admin.Controllers
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IWebHostEnvironment _hostEnviornment;
-        
+
         public ProductController(IUnitOfWork unitOfWork, IWebHostEnvironment hostEnvironment)
         {
             _unitOfWork = unitOfWork;
@@ -26,8 +26,6 @@ namespace VeerpalKaurBookStore.Areas.Admin.Controllers
         {
             return View();
         }
-
-
         //public IActionResult Upsert(int? id)
         //// get action method for Upsert
         //{
@@ -37,14 +35,14 @@ namespace VeerpalKaurBookStore.Areas.Admin.Controllers
         //        CategoryList = _unitOfWork.Category.GetAll().Select(i => new SelectListItem
         //        {
         //            Text = i.Name,
-        //            Value = i.Id.ToString()
+        //            Value = i.ID.ToString()
         //        }),
 
-        //    CoverTypeList = _unitOfWork.CoverType.GetAll().Select(i => new SelectListItem
-        //    {
-        //        Text = i.Name,
-        //        Value = i.id.ToString()
-        //    }),
+        //        CoverTypeList = _unitOfWork.CoverType.GetAll().Select(i => new SelectListItem
+        //        {
+        //            Text = i.Name,
+        //            Value = i.ID.ToString()
+        //        }),
 
         //    }; // using AndrewsBooks.Models;
         //    if (id == null)
@@ -60,7 +58,6 @@ namespace VeerpalKaurBookStore.Areas.Admin.Controllers
         //    }
         //    return View(productVM);
         //}
-
         //API calls here
 
         #region API CALLS
@@ -68,7 +65,7 @@ namespace VeerpalKaurBookStore.Areas.Admin.Controllers
 
         public IActionResult GetALL()
         {
-            var allObj = _unitOfWork.Product.GetAll(includeProperties: "Category , CoverType");
+            var allObj = _unitOfWork.Product.GetAll(includeProperties: "Category,CoverType");
             return Json(new { data = allObj });
         }
 
