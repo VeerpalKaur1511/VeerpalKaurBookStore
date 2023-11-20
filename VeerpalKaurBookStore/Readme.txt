@@ -156,3 +156,10 @@ then i added code to unitofwork and i unitofwork
 
 then i added i new folder named covertypecontroller and modify my code
 then i add a code in layout to get covertype in brower
+then i add new foder named covertype under area/admin/views...
+then i add new index file under this folder and modify my code in this file...
+ 
+
+2:00pm
+
+then i added new js file under wwwroot..and modify my code
