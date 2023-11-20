@@ -146,8 +146,13 @@ InvalidOperationException: The partial view '_ValidationScriptPartial' was not f
 17/11/2023   3.00pm
 i started my 3 part of my 2 assignment first i make i  class Covertype.cs under models folder
 then make new class and interface under repositry folder ...after that i new code to applicationDbContext.cs named CoverType
-then i run a migration command (20231117214837_AddCoverTypeToDB.cs)...
+then i run a migration command add migration AddcoverTypeToDb...which  makes a new folder named (20231117214837_AddCoverTypeToDB.cs)
 
 then i modify my code in covertyperepositry and icovertyperepositry 
 i updated code in files
-then i added code to unitofwork and iunitofwork
+then i added code to unitofwork and i unitofwork
+
+20/11/2023   11.26pm
+
+then i added i new folder named covertypecontroller and modify my code
+then i add a code in layout to get covertype in brower
