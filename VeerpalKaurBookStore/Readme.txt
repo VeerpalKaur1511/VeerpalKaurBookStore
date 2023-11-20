@@ -168,10 +168,10 @@ then i added new js file under wwwroot..and modify my code
 
 then i added new file under viewmodels and modify my code...
 then i add code to data...
-then i added add-migration AddProductToDb ...which makes this folder 20231120213543_addProductToDb...
+then i added add-migration AddProductToDb ...which makes this folder (20231120213543_addProductToDb...)
 then update database
 
-then i added  add-migration addValidationToProduct ...which makes this folder20231120214533_addValidationToProduct
+then i added  add-migration addValidationToProduct ...which makes this folder (20231120214533_addValidationToProduct..)
 then update database
 
 then io addded new class and interface named productrepositry nd iproductrepositry
@@ -184,3 +184,5 @@ part(3) section (2)  5.25pm
 then i added new controller under controllers folder and modify my all code..
 then i create a viewmodel under models folder and hold the covertype and category
 thrn i install a microsoft.aspnetcore.Mvc.viewfeatures command
+
+then i modify my code in productcontroller and add API calls
