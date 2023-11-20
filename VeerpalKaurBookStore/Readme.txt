@@ -144,6 +144,7 @@ InvalidOperationException: The partial view '_ValidationScriptPartial' was not f
 
 
 17/11/2023   3.00pm
+part 3 (section 1)
 i started my 3 part of my 2 assignment first i make i  class Covertype.cs under models folder
 then make new class and interface under repositry folder ...after that i new code to applicationDbContext.cs named CoverType
 then i run a migration command add migration AddcoverTypeToDb...which  makes a new folder named (20231117214837_AddCoverTypeToDB.cs)
@@ -177,3 +178,9 @@ then io addded new class and interface named productrepositry nd iproductreposit
 then i modify my code in productrepositry and iproductrepositry 
 i updated code in files
 then i added code to unitofwork and iunitofwork
+
+
+part(3) section (2)  5.25pm
+then i added new controller under controllers folder and modify my all code..
+then i create a viewmodel under models folder and hold the covertype and category
+thrn i install a microsoft.aspnetcore.Mvc.viewfeatures command
