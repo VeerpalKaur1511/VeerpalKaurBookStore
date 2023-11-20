@@ -172,3 +172,8 @@ then update database
 
 then i added  add-migration addValidationToProduct ...which makes this folder20231120214533_addValidationToProduct
 then update database
+
+then io addded new class and interface named productrepositry nd iproductrepositry
+then i modify my code in productrepositry and iproductrepositry 
+i updated code in files
+then i added code to unitofwork and iunitofwork
