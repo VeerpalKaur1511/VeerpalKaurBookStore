@@ -211,5 +211,7 @@ first i modify my code in Sd.cs file and i added i public function
 
 then i add new code public double ListPrice { get; set; },public double Price { get; set; }
 ,public double Price50 { get; set; },public double Price100 { get; set; } to make new filds
-...
-then i also add code  to productcontroller.cs 
+...then i also add code  to productcontroller.cs 
+
+11/24/2023  2.36pm
+then i get a ajax error to solve this error i replace 0 instaed of nulll
