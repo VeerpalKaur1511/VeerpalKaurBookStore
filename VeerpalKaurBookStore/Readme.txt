@@ -217,3 +217,7 @@ then i add new code public double ListPrice { get; set; },public double Price { 
 then i get a ajax error to solve this error i replace 0 instaed of nulll
 i do this replacment in upsert.cs file
 then i modify my code in product>upsert.cshtml to get new fileds for price and listprice
+
+then i modify my code in Controller > Homecontroller.cs             
+IEnumerable<Product> productList = _unifOfWork.Product.GetAll(includeProperties: "Category,CoverType");
+after that i also add some using statments to get error free code
