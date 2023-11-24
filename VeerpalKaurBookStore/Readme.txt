@@ -206,3 +206,10 @@ now i'm staring my part 4 for my application to make its unique
 first i created anew folder under wwwroot named images...
 under images i createda folder for products
 first i modify my code in Sd.cs file and i added i public function
+
+11/24/2023  12.21pm
+
+then i add new code public double ListPrice { get; set; },public double Price { get; set; }
+,public double Price50 { get; set; },public double Price100 { get; set; } to make new filds
+...
+then i also add code  to productcontroller.cs 
