@@ -224,3 +224,5 @@ after that i also add some using statments to get error free code
 
 3.02pm
 then i replace my code in Area>customer>views>Home>Index.cshtml with provided code
+and replace id with ID
+in this part i add new code to Productrepositry.cs about added new fileds like listprice, price and price50
