@@ -199,7 +199,10 @@ then update datbase...
 then run my application ....itworking
 
 11/24/2023  9.48AM
+
 part(4)
+
 now i'm staring my part 4 for my application to make its unique
 first i created anew folder under wwwroot named images...
 under images i createda folder for products
+first i modify my code in Sd.cs file and i added i public function
