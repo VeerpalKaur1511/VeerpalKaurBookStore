@@ -226,3 +226,10 @@ after that i also add some using statments to get error free code
 then i replace my code in Area>customer>views>Home>Index.cshtml with provided code
 and replace id with ID
 in this part i add new code to Productrepositry.cs about added new fileds like listprice, price and price50
+
+3.15pm
+then i replace my modify my code in repositry.cs and i get this code from provided
+github repositry after that i get some error
+then i click on show potenial error and i fix my all errors
+then i run my application ...
+update-datbase in pm console....
