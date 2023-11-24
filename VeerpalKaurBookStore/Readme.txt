@@ -221,3 +221,6 @@ then i modify my code in product>upsert.cshtml to get new fileds for price and l
 then i modify my code in Controller > Homecontroller.cs             
 IEnumerable<Product> productList = _unifOfWork.Product.GetAll(includeProperties: "Category,CoverType");
 after that i also add some using statments to get error free code
+
+3.02pm
+then i replace my code in Area>customer>views>Home>Index.cshtml with provided code
