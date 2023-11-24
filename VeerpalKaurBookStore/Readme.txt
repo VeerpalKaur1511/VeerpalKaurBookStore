@@ -216,3 +216,4 @@ then i add new code public double ListPrice { get; set; },public double Price { 
 11/24/2023  2.36pm
 then i get a ajax error to solve this error i replace 0 instaed of nulll
 i do this replacment in upsert.cs file
+then i modify my code in product>upsert.cshtml to get new fileds for price and listprice
