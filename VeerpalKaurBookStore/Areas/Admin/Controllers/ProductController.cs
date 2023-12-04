@@ -48,7 +48,7 @@ namespace VeerpalKaurBookStore.Areas.Admin.Controllers
 
             if (id == null)
             {
-                // This is for create
+             
                 return View(productVM);
             }
 
@@ -80,7 +80,6 @@ namespace VeerpalKaurBookStore.Areas.Admin.Controllers
 
                     if (productVM.Product.ImageUrl != null)
                     {
-                        // This is an edit, and we need to remove the old image
                         var imagePath = Path.Combine(webRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
 
                         if (System.IO.File.Exists(imagePath))
@@ -98,7 +97,6 @@ namespace VeerpalKaurBookStore.Areas.Admin.Controllers
                 }
                 else
                 {
-                    // Update when they do not change the image
                     if (productVM.Product.ID != 0)
                     {
                         Product objFromDb = _unitOfWork.Product.Get(productVM.Product.ID);
