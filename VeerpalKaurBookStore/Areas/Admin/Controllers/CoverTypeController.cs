@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 using VeerpalBooks.DataAccess.Repository.IRepository; 
 using VeerpalBooks.Models;
 
-namespace VeerpalKaurBookStore.Areas.Admin.Controllers 
+namespace VeerpalKaurBookStore.Areas.Admin.Controllers
 {
+
     [Area("Admin")]
     public class CoverTypeController : Controller
     {
@@ -22,14 +23,14 @@ namespace VeerpalKaurBookStore.Areas.Admin.Controllers
             return View();
         }
 
-        public IActionResult Upsert(int? id) // action method for uppsert
+        public IActionResult Upsert(int? id)
         {
             CoverType coverType = new CoverType();
             if (id == null)
             {
                 return View(coverType);
-
             }
+
             coverType = _unitOfWork.CoverType.Get(id.GetValueOrDefault());
             if (coverType == null)
             {
@@ -48,7 +49,7 @@ namespace VeerpalKaurBookStore.Areas.Admin.Controllers
                 if (coverType.id == 0)
                 {
                     _unitOfWork.CoverType.Add(coverType);
-                    _unitOfWork.Save();
+
                 }
                 else
                 {
@@ -59,20 +60,18 @@ namespace VeerpalKaurBookStore.Areas.Admin.Controllers
             }
             return View(coverType);
         }
-        //API calls here
 
+        //api calls
         #region API CALLS
         [HttpGet]
-
-        public IActionResult GetALL()
+        public IActionResult GetAll()
         {
             var allObj = _unitOfWork.CoverType.GetAll();
             return Json(new { data = allObj });
         }
-
+        #endregion
 
         [HttpDelete]
-
         public IActionResult Delete(int id)
         {
             var objFromDb = _unitOfWork.CoverType.Get(id);
@@ -84,6 +83,6 @@ namespace VeerpalKaurBookStore.Areas.Admin.Controllers
             _unitOfWork.Save();
             return Json(new { success = true, message = "Delete successful" });
         }
-        #endregion
     }
+
 }

@@ -45,17 +45,21 @@ namespace VeerpalKaurBookStore.Areas.Admin.Controllers
                     Value = i.id.ToString()
                 })
             };
+
             if (id == null)
             {
-                // this is for create
+                // This is for create
                 return View(productVM);
             }
-            // this is for edit
+
+            // This is for edit
             productVM.Product = _unitOfWork.Product.Get(id.GetValueOrDefault());
+
             if (productVM.Product == null)
             {
                 return NotFound();
             }
+
             return View(productVM);
         }
 
@@ -67,6 +71,7 @@ namespace VeerpalKaurBookStore.Areas.Admin.Controllers
             {
                 string webRootPath = _hostEnvironment.WebRootPath;
                 var files = HttpContext.Request.Form.Files;
+
                 if (files.Count > 0)
                 {
                     string fileName = Guid.NewGuid().ToString();
@@ -75,22 +80,25 @@ namespace VeerpalKaurBookStore.Areas.Admin.Controllers
 
                     if (productVM.Product.ImageUrl != null)
                     {
-                        // this is an edit and we need to remove old image
+                        // This is an edit, and we need to remove the old image
                         var imagePath = Path.Combine(webRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
+
                         if (System.IO.File.Exists(imagePath))
                         {
                             System.IO.File.Delete(imagePath);
                         }
                     }
+
                     using (var filesStreams = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
                     {
                         files[0].CopyTo(filesStreams);
                     }
+
                     productVM.Product.ImageUrl = @"\images\products\" + fileName + extension;
                 }
                 else
                 {
-                    // update when they do not change the image
+                    // Update when they do not change the image
                     if (productVM.Product.ID != 0)
                     {
                         Product objFromDb = _unitOfWork.Product.Get(productVM.Product.ID);
@@ -106,6 +114,7 @@ namespace VeerpalKaurBookStore.Areas.Admin.Controllers
                 {
                     _unitOfWork.Product.Update(productVM.Product);
                 }
+
                 _unitOfWork.Save();
                 return RedirectToAction(nameof(Index));
             }
@@ -116,16 +125,19 @@ namespace VeerpalKaurBookStore.Areas.Admin.Controllers
                     Text = i.Name,
                     Value = i.Id.ToString()
                 });
+
                 productVM.CoverTypeList = _unitOfWork.CoverType.GetAll().Select(i => new SelectListItem
                 {
                     Text = i.Name,
                     Value = i.id.ToString()
                 });
+
                 if (productVM.Product.ID != 0)
                 {
                     productVM.Product = _unitOfWork.Product.Get(productVM.Product.ID);
                 }
             }
+
             return View(productVM);
         }
 
@@ -142,22 +154,26 @@ namespace VeerpalKaurBookStore.Areas.Admin.Controllers
         public IActionResult Delete(int id)
         {
             var objFromDb = _unitOfWork.Product.Get(id);
+
             if (objFromDb == null)
             {
                 return Json(new { success = false, message = "Error while deleting" });
             }
+
             string webRootPath = _hostEnvironment.WebRootPath;
             var imagePath = Path.Combine(webRootPath, objFromDb.ImageUrl.TrimStart('\\'));
+
             if (System.IO.File.Exists(imagePath))
             {
                 System.IO.File.Delete(imagePath);
             }
+
             _unitOfWork.Product.Remove(objFromDb);
             _unitOfWork.Save();
+
             return Json(new { success = true, message = "Delete Successful" });
         }
 
         #endregion
-
     }
 }
